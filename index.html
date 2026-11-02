@@ -1,0 +1,31 @@
+﻿<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ma bibliothèque</title>
+<meta name="theme-color" content="#7a1f2b">
+<meta name="description" content="Répertorier ma collection de livres anciens">
+<link rel="manifest" href="manifest.json">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Mes livres">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" href="icon-192.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app" role="main"></div>
+<nav id="tabs" aria-label="Menu principal">
+  <a href="#/" data-tab="accueil"><span class="ico">📚</span>Accueil</a>
+  <a href="#/ajouter" data-tab="ajouter"><span class="ico">＋</span>Ajouter</a>
+  <a href="#/collection" data-tab="collection"><span class="ico">📊</span>Ma collection</a>
+</nav>
+<div id="modal" hidden></div>
+<div id="toast" hidden></div>
+<script src="html5-qrcode.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
+
